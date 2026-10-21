@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/stories/page": "app/stories/page.js",
+  "/compare/page": "app/compare/page.js",
+  "/stories/[slug]/page": "app/stories/[slug]/page.js"
+}

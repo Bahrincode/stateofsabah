@@ -1,0 +1,48 @@
+state-of-sabah/
+├── app/                              # Next.js App Router (Pages & Layout)
+│   ├── layout.tsx                    # Root layout (loads editorial fonts like Newsreader/Geist)
+│   ├── globals.css                   # Tailwind imports and base typography styles
+│   ├── page.tsx                      # Homepage ("Today" dashboard - already built)
+│   ├── districts/
+│   │   ├── page.tsx                  # Index of all 27 districts
+│   │   └── [slug]/page.tsx           # Dynamic page for individual districts (e.g., /districts/ranau)
+│   ├── maps/
+│   │   └── page.tsx                  # Full-page interactive spatial explorer
+│   ├── stories/
+│   │   ├── page.tsx                  # Index of all data journalism explainers
+│   │   └── [slug]/page.tsx           # Dynamic page for individual stories
+│   ├── compare/
+│   │   └── page.tsx                  # District vs District benchmarking tool
+│   └── methodology/
+│       └── page.tsx                  # Data sources, caveats, and update frequencies
+│
+├── components/                       # Reusable React Components
+│   ├── layout/
+│   │   ├── Header.tsx                # Site navigation bar
+│   │   └── Footer.tsx                # Methodology footer
+│   ├── ui/
+│   │   ├── StatusBadge.tsx           # Reusable "Live", "Official Latest", "Forecast" tags
+│   │   └── Sparkline.tsx             # SVG line charts for data tiles
+│   ├── maps/
+│   │   ├── SabahMapCanvas.tsx        # The interactive SVG/GeoJSON map component
+│   │   └── MapInspectorCard.tsx      # The side panel showing district data on click
+│   └── widgets/
+│       ├── SignalTile.tsx            # The 6 bento-box tiles on the homepage
+│       └── DistrictSpotlight.tsx     # The rotating district feature
+│
+├── lib/                              # Data fetching, logic, and types
+│   ├── types.ts                      # TypeScript interfaces (DistrictData, DataStatus, etc.)
+│   ├── static-data.ts                # Extracted SABAH_DIVISIONS, TELEMETRY_NODES constants
+│   ├── fetchers.ts                   # API functions to fetch OpenDOSM and MetMalaysia live data
+│   └── utils.ts                      # Helper functions (e.g., Tailwind class merging, date formatting)
+│
+├── public/                           # Static Assets (Images, Fonts, GeoJSON)
+│   ├── geo/
+│   │   └── sabah-districts.geojson   # Official boundaries for the 27 districts
+│   └── images/
+│       └── stories/                  # Photos and charts for explainer articles
+│
+├── next.config.ts                    # Next.js configuration
+├── tailwind.config.ts                # Tailwind CSS theme and colors
+├── tsconfig.json                     # TypeScript configuration
+└── package.json                      # Dependencies (Next.js, Tailwind, etc.)
