@@ -2,12 +2,13 @@
 import type { Metadata } from "next";
 import { Newsreader, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import {Header} from "@/components/layout/Header";
+import Header from "@/components/layout/Header";
 import {Footer} from "@/components/layout/Footer";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
   variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 

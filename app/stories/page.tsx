@@ -37,7 +37,7 @@ export default function StoriesPage() {
       <header className="pb-10 border-b border-[#E5E0D8] mb-12">
         
         <p className="text-xs font-mono uppercase tracking-widest text-emerald-800 mb-2">
-          The Library · Chapter Two
+          The Library
         </p>
         <h1 className="font-serif text-5xl sm:text-6xl tracking-tight text-stone-950 mb-6">
           Stories

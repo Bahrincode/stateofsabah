@@ -1,6 +1,8 @@
 {
   "/page": "app/page.js",
   "/stories/page": "app/stories/page.js",
-  "/compare/page": "app/compare/page.js",
-  "/stories/[slug]/page": "app/stories/[slug]/page.js"
+  "/maps/page": "app/maps/page.js",
+  "/topics/[slug]/page": "app/topics/[slug]/page.js",
+  "/stories/[slug]/page": "app/stories/[slug]/page.js",
+  "/districts/page": "app/districts/page.js"
 }

@@ -19,7 +19,7 @@ export default function MapsPage() {
         {/* Chapter Header */}
         <header className="pt-16 pb-12">
           <p className="text-xs font-mono uppercase tracking-widest text-emerald-800 mb-4">
-            The Library · Chapter One
+            The Maps
           </p>
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl tracking-tight text-stone-950 mb-6 max-w-4xl leading-[1.05]">
             Geography, rendered as stories of land and life.
